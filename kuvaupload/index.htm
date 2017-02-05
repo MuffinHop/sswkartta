@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Suomen Street Workout map</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Condensed" />
+  <link href="../css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+  <script src="../js/jquery-1.8.3.js"></script>
+  <script src="../js/jquery-ui-1.9.2.custom.js"></script>
+    <style>
+      html, body, #kartta {
+        height: 99%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 0.95em;
+        font-family:times;
+        font-family:'Open Sans';
+        font-style:condensed;
+        background-color:#222222;
+      }
+      button {
+        width:100%;
+        font-size:16pt;
+      }
+      #content {
+        background-color: #fff;
+        margin:2em;
+        height:80%;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"><br>
+    <h3>Kuva upload</h3>
+<form enctype="multipart/form-data" action="save.php" method="POST">
+<input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+Choose a file to upload: <input name="upfile" type="file" /><br />
+salasana:
+<input name="salasana" type="password" /><br />
+<input type="submit" value="Upload File" />
+</form>
+
+  </div>
+  </body>
+</html>

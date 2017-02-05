@@ -1,0 +1,216 @@
+html, body, #map {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.95em;
+    font-family:times;
+    font-family:'Open Sans';
+    font-style:condensed;
+    background-color:#222222;
+}
+button {
+    width:100%;
+}
+#header {
+	text-align: center;
+    vertical-align: center;
+}
+#quicklinks {
+	position:fixed;
+	top:2em;
+	right:0em;
+	z-index: 100;
+	width:200px;
+	background-color: #000;
+	font-size: 0.8em;
+	padding:1em;
+	text-align: right;
+}
+a {
+	color:#aaa;
+}
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    background-color: #8f8f8f;
+}
+input[type='text'] {
+    font-size: 0.8em;
+}
+.targetSelected {
+}
+
+.targetItem {
+	font-size: 0.8em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #ffaf33;
+	margin-bottom:1px;
+	color: #000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#selectSearchTargets {
+	position:fixed;
+	z-index: 2;
+	max-width:240px;
+	opacity: 0.9;
+	bottom: 3em;
+	background-color: #ffffff;
+	padding:0.5em;
+	user-select: none;
+}
+#newSuggestions {
+	position:fixed;
+	z-index: 2;
+	max-width:100px;
+	opacity: 0.9;
+	left: 380px;
+	bottom: 2em;
+	background-color: #ffffff;
+	padding:0.5em;
+	user-select: none;
+	max-height:120px;
+	min-width:800px;
+	overflow-y: auto;
+}
+#newSuggestions a:link, #newSuggestions a:visited{
+	color:#000088;
+}
+#blocktarget {
+	width:120px;
+	background-color: #ffaf33;
+	text-align: center;
+}
+#searchbar {
+	width:100%;
+	background-color: #ffffff;
+	text-align: left;
+	font-size: 1.5em;
+}
+tiny {
+	font-size: 0.8em;
+	color: #666666;
+}
+#showHideSearch {
+	position:fixed;
+	bottom:2em;
+	left:0em;
+	z-index: 100;
+	width:256px;
+	background-color: #fff;
+}
+@media screen and (max-width:512px) {
+	html, body, #map {
+	    height: 99%;
+	    margin: 0px;
+	    padding: 0px;
+	    font-size: 0.95em;
+	    font-family:times;
+	    font-family:'Open Sans';
+	    font-style:condensed;
+	    background-color:#222222;
+	}
+	.targetItem {
+		padding: 0.24em;
+		background-color: #ffaf33;
+		margin-bottom:1px;
+		color: #000000;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	#selectSearchTargets {
+		position:fixed;
+		z-index: 2;
+		max-width:120px;
+		opacity: 0.9;
+		bottom: 3em;
+		background-color: #ffffff;
+		padding:0.5em;
+		font-size: 0.8em;
+		user-select: none;
+	}
+	#showHideSearch {
+		position:fixed;
+		bottom:0.5em;
+		left:0em;
+		z-index: 100;
+		width:132px;
+		background-color: #fff;
+		font-size: 0.8em;
+	}
+	#quicklinks {
+		display:none;
+	}
+}
+#addMarker {
+	background-color: #ffffff;
+}
+#moveMarker {
+	background-color: #ffffff;
+}
+#saveEdits, #saveSuggestions {
+	background-color: #000;
+	color: #fff;
+	height:32px;
+}
+#newMarkerDialog {
+	display:none;
+	width:90%;
+}
+.editbox  {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #f8f8f8;
+	margin-bottom:1px;
+	color: #000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.targetName .targetStreet .targetNumber .targetZIP .targetMunicipality .targetNfo {
+	border-style: dotted; 
+	border-width: 1px;
+}
+.message {
+	min-width:80%;
+	min-height:120px;
+	padding: 0.5em;
+	margin:1em;
+	background-color: #f8f8f8;
+}
+#sendmessage {
+	min-width:80%;
+	padding: 1em;
+	margin:1em;
+	background-color: #777;
+}
+#thanks {
+	width:95%;
+	max-width:640px;
+	min-height:480px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #555;
+	color: #fff;
+	padding:4em;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 128px;
+    background-position: right top;
+}
